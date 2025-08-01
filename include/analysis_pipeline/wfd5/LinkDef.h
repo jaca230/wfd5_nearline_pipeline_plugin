@@ -29,6 +29,7 @@
 #pragma link C++ class dataProducts::wfd5_jitter_corrected_waveforms+;
 #pragma link C++ class create_calo_cluster_from_integral_stage+;
 #pragma link C++ class identify_pileup_from_peaks_stage+;
+#pragma link C++ class identify_pileup_from_fits_stage+;
 #pragma link C++ class fit_with_time_constraint_stage+;
 #pragma link C++ class wfd5_digitizer_time_alignment_stage+;
 #pragma link C++ class detector_grouping_stage+;
