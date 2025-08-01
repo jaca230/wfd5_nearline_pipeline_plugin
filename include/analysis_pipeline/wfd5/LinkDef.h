@@ -4,7 +4,6 @@
 #pragma link off all functions;
 
 #pragma link C++ class dataProducts::nai_wf+;
-#pragma link C++ class dataProducts::wfd5_trace_integral+;
 #pragma link C++ class dataProducts::veto_integral+;
 #pragma link C++ class dataProducts::veto_wf+;
 #pragma link C++ class dataProducts::veto_fit+;
@@ -29,13 +28,11 @@
 #pragma link C++ class dataProducts::nai_integral+;
 #pragma link C++ class dataProducts::wfd5_jitter_corrected_waveforms+;
 #pragma link C++ class create_calo_cluster_from_integral_stage+;
-#pragma link C++ class wfd5_waveforms_integrator_stage+;
 #pragma link C++ class identify_pileup_from_peaks_stage+;
 #pragma link C++ class fit_with_time_constraint_stage+;
 #pragma link C++ class wfd5_digitizer_time_alignment_stage+;
 #pragma link C++ class detector_grouping_stage+;
 #pragma link C++ class identify_xy_position_from_fit_stage+;
-#pragma link C++ class wfd5_trace_integral_histogram_stage+;
 #pragma link C++ class integrate_around_given_time_stage+;
 #pragma link C++ class identify_xy_position_from_integral_stage+;
 #pragma link C++ class rf_fit_stage+;
