@@ -42,7 +42,7 @@
 #pragma link C++ class identify_max_amp_time_stage+;
 #pragma link C++ class integrate_around_max_pulse_stage+;
 #pragma link C++ class identify_peak_stage+;
-#pragma link C++ class identify_time_of_lyso_hit+;
+#pragma link C++ class identify_time_of_lyso_hit_stage+;
 #pragma link C++ class create_calo_cluster_from_fit_stage+;
 
 #endif

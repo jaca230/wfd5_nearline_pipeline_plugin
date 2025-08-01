@@ -1,18 +1,18 @@
-#include "analysis_pipeline/wfd5/stages/identify_time_of_lyso_hit.h"
+#include "analysis_pipeline/wfd5/stages/identify_time_of_lyso_hit_stage.h"
 
 #include <TParameter.h>
 #include <spdlog/spdlog.h>
 
-ClassImp(identify_time_of_lyso_hit)
+ClassImp(identify_time_of_lyso_hit_stage)
 
-identify_time_of_lyso_hit::identify_time_of_lyso_hit() = default;
+identify_time_of_lyso_hit_stage::identify_time_of_lyso_hit_stage() = default;
 
-void identify_time_of_lyso_hit::OnInit() {
+void identify_time_of_lyso_hit_stage::OnInit() {
     example_config_value_ = parameters_.value("example_value", 0.0);
     spdlog::debug("[{}] Initialized with example_value={}", Name(), example_config_value_);
 }
 
-void identify_time_of_lyso_hit::Process() {
+void identify_time_of_lyso_hit_stage::Process() {
     auto param = std::make_unique<TParameter<double>>("example_product", example_config_value_);
 
     auto pdp = std::make_unique<PipelineDataProduct>();
@@ -24,4 +24,3 @@ void identify_time_of_lyso_hit::Process() {
     getDataProductManager()->addOrUpdate("example_product", std::move(pdp));
     spdlog::debug("[{}] Produced example_product with value {}", Name(), example_config_value_);
 }
-
